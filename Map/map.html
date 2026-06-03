@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep-Sea Shipwreck Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="map.css">
+    <style>
+        /* Small localized style patch to structure the navigation items on this page */
+        .map-nav { margin-top: 10px; }
+        .map-nav a { color: #64b5f6; margin-right: 15px; text-decoration: none; font-weight: bold;}
+        .map-nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Global Shipwreck Explorer</h1>
+        <p>Interactive registry of historic deep-sea archaeological discoveries.</p>
+        <nav class="map-nav">
+            <a link href="../index.html">← Back to Home</a> <!-- Hyperlink to Source 3 -->
+            <a link href="../FAQ/faq.html">View FAQs</a> <!-- Hyperlink to Source 2 -->
+        </nav>
+    </header>
+
+    <div id="map"></div>
+
+    <div id="interaction-overlay" class="info-panel">
+        <h4>Telemetry &amp; Event Monitor</h4>
+        <p id="telemetry-status">Click anywhere or drag the map to stream coordinates.</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="map.js"></script>
+</body>
+</html>

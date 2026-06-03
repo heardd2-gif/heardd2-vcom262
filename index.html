@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipwreck Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link class="icon" href="images/Website Icon logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/Website Logo.png" alt="Shipwreck Finder Logo" class="logo-img">
+                <div class="logo-text">
+                  <h1>SHIPWRECK</h1>
+                    <span>FINDER</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#map-section">Shipwreck Map</a>
+                <a href="#how-to">How To</a>
+                <a href="#history">Timeline</a>
+                <a href="FAQ/faq.html">FAQs</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay" style="background-image: url('images/Water.png');"></div>
+        <div class="container hero-content">
+            <h2>Finding shipwrecks has never been easier.</h2>
+            <div class="grid-3-col">
+                <div class="card">
+                    <div class="card-img-placeholder" style="background-image: url('images/google map.png');"></div>
+                    <h3>Shipwreck Map</h3>
+                    <a link href="Map/map.html" class="btn">Explore Shipwrecks →</a> 
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background-image: url('images/Ocean-Zones.jpg');"></div>
+                    <h3>Ocean Zones</h3>
+                    <a href="#how-to" class="btn">Learn Zones →</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background-image: url('images/RMS Lusitania shipwreck.jpg'); background-size: cover;"></div>
+                    <h3>Follow Along Process</h3>
+                    <a href="#history" class="btn">See Timeline →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section" class="map-section">
+        <div class="container">
+            <h2 class="section-title">Shipwreck Map</h2>
+            <div class="map-container">
+                
+                <div class="mock-map-wrapper">
+                    <img src="images/google map.png" alt="Ocean Floor Bathymetry Map" class="map-bg">
+                    
+                    <div class="map-pin pin-rhone" data-wreck="rhone" style="top: 35%; left: 25%;">⚓</div>
+                    <div class="map-pin pin-britannic" data-wreck="britannic" style="top: 42%; left: 45%;">⚓</div>
+                    <div class="map-pin pin-lusitania" data-wreck="lusitania" style="top: 28%; left: 60%;">⚓</div>
+                    <div class="map-pin pin-indy" data-wreck="indy" style="top: 65%; left: 75%;">⚓</div>
+
+                    <div id="map-tooltip" class="map-tooltip hidden">
+                        <h4 id="tooltip-title">Click a pin to explore</h4>
+                        <p id="tooltip-meta"></p>
+                        <p id="tooltip-desc">Select any anchor pin on the seafloor topography to display wreck files, identity metrics, and depth recordings.</p>
+                    </div>
+                </div>
+
+                <div class="map-sidebar">
+                    <h3>Using The Map</h3>
+                    <p>This panel interfaces with sonar bathymetry grids. Click any interactive anchor element on the left to pull data records out of deep water zones instantly.</p>
+                    <p style="margin-top: 15px;"><a link href="Map/map.html" style="color: #64b5f6; font-weight: bold;">Launch Shipwreck Map 2.0 →</a></p> 
+                    <div class="sidebar-decor-img" style="background-image: url('images/Water.png');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to" class="how-to-section">
+        <div class="container">
+            <div class="intro-text">
+                <h3>So you're out at sea and want to find a shipwreck. Where do you start?</h3>
+                <p>Understanding environmental light levels and atmospheric pressure determines finding procedures.</p>
+            </div>
+
+            <div class="ocean-levels-diagram">
+                <div class="zone zone-sunlight">Sunlight Zone (0m - 200m)</div>
+                <div class="zone zone-twilight">Twilight Zone (200m - 1,000m)</div>
+                <div class="zone zone-midnight">Midnight Zone (1,000m - 4,000m)</div>
+                <div class="zone zone-abyss">The Abyss (4,000m - 6,000m)</div>
+                <div class="zone zone-trenches">Trenches (6,000m+)</div>
+            </div>
+
+            <div class="zone-detail-card">
+                <div class="zone-detail-grid">
+                    <div>
+                        <h3>Zone 4: The Abyss</h3>
+                        <p>Remaining in total darkness, abyssal plains contain massive structural ruins safely protected from surface turbulence. Due to freezing conditions and a near-complete lack of wood-boring organisms, historical structures found here present pristine physical data models.</p>
+                    </div>
+                    <div class="detail-img-box" style="background-image: url('images/USS Johnston.jpg');"></div>
+                </div>
+            </div>
+
+            <div class="identifying-section">
+                <h3>Identifying Shipwrecks</h3>
+                <p class="sub-intro">Analyze physical structural characteristics to pinpoint historic identity records.</p>
+                <div class="grid-3-col">
+                    <div class="id-card">
+                        <div class="circle-img" style="background-image: url('images/rms rhone.jpg');"></div>
+                        <h4>Hull Configurations</h4>
+                        <p>Examining copper sheath framework coverings versus riveted steel panels defines build eras.</p>
+                    </div>
+                    <div class="id-card">
+                        <div class="circle-img" style="background-image: url('images/USS Indianapolis.jpg');"></div>
+                        <h4>Artifact Preservation</h4>
+                        <p>Serial numbers, stamping labels, and machinery markings provide positive name validation indicators.</p>
+                    </div>
+                    <div class="id-card">
+                        <div class="circle-img" style="background-image: url('images/SS Gairsoppa shipwreck.jpg');"></div>
+                        <h4>Debris Fields</h4>
+                        <p>Mapping scattered cargo loads tells deep stories about directional velocity profiles before hitting bottom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="history-section">
+        <div class="container">
+            <div class="history-hero">
+                <h2>Shipwreck History &amp; Timelines</h2>
+                <p>Click on the chronological markers below to dynamically track changes in maritime construction architecture across centuries.</p>
+            </div>
+
+            <div class="interactive-timeline">
+                <div class="timeline-nav">
+                    <button class="time-btn active" data-year="1867">1867: RMS Rhone</button>
+                    <button class="time-btn" data-year="1916">1916: HMHS Britannic</button>
+                    <button class="time-btn" data-year="1945">1945: USS Indianapolis</button>
+                    <button class="time-btn" data-year="2022">2022: Deepest Wrecks</button>
+                </div>
+                
+                <div class="timeline-display-window">
+                    <div id="timeline-card" class="timeline-content-card">
+                        <div class="timeline-text">
+                            <span class="timeline-badge" id="timeline-year-label">1867</span>
+                            <h3 id="timeline-title">RMS Rhone</h3>
+                            <p id="timeline-desc-text">An iron-hulled steamship that sank during a severe hurricane in the Caribbean. Because it sits in relatively shallow water (approx 25m), it remains a primary study point for early steam engineering degradation systems.</p>
+                        </div>
+                        <div class="timeline-img" id="timeline-img-frame" style="background-image: url('images/rms rhone.jpg');"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-row grid-2-col">
+                <div>
+                    <h3>How do ships sink?</h3>
+                    <p>Whether compromised through internal stress patterns, structural impacts, or weather dynamics, vessels go through major hydrodynamic forces during their descent to the seafloor, shifting structural layouts permanently.</p>
+                </div>
+                <div class="rect-img-placeholder" style="background-image: url('images/Britannic shipwreck.jpg');"></div>
+            </div>
+
+            <div class="info-row grid-2-col reverse-layout">
+                <div>
+                    <h3>How do shipwrecks get rust?</h3>
+                    <p>Deep ocean microbes feed directly on iron alloys. Over decades, these biological clusters form unique stalactite-like iron formations known as <strong>rusticles</strong>, which slowly recycling heavy plating back into oceanic chemical cycles.</p>
+                </div>
+                <div class="rect-img-placeholder" style="background-image: url('images/USS Samuel B. Roberts shpiwreck.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Shipwreck Finder. | <a link href="FAQ/faq.html" style="color: #fff; text-decoration: underline;">Legal &amp; Exploration FAQ</a></p> 
+    </footer>
+
+    <script>
+        const wreckData = {
+            rhone: {
+                title: "RMS Rhone",
+                meta: "Depth: 25 Meters | Sank: 1867",
+                desc: "An early commercial iron sail-steamer hull. Excellent shallow light visibility allows comprehensive coral encrustation research."
+            },
+            britannic: {
+                title: "HMHS Britannic",
+                meta: "Depth: 120 Meters | Sank: 1916",
+                desc: "Titanic's sister ship. Rests mostly intact on her starboard side within the Aegean Sea, offering massive structural archeological insights."
+            },
+            lusitania: {
+                title: "RMS Lusitania",
+                meta: "Depth: 93 Meters | Sank: 1915",
+                desc: "Located off the Irish coast. Significant collapse presents engineers with critical data on lightning-fast kinetic underwater structural collapses."
+            },
+            indy: {
+                title: "USS Indianapolis",
+                meta: "Depth: 5,500 Meters | Sank: 1945",
+                desc: "Discovered resting in the Philippine Sea abyssal plains. Highly preserved hull armor fragments sit under pitch black high-pressure conditions."
+            }
+        };
+
+        const timelineData = {
+            "1867": {
+                title: "RMS Rhone",
+                desc: "An iron-hulled sail-steamer that fell victim to a massive Caribbean category cyclone. Serves as an exceptional model for analyzing biological coral grafting on historical wrought iron architecture.",
+                img: "images/rms rhone.jpg"
+            },
+            "1916": {
+                title: "HMHS Britannic",
+                desc: "A massive Olympic-class ocean liner converted into a hospital ship during WWI. Sunk via underwater mine contact, its structural footprint shows mechanical compression traits from seabed collision impacts.",
+                img: "images/Britannic shipwreck.jpg"
+            },
+            "1945": {
+                title: "USS Indianapolis (CA-35)",
+                desc: "A decorated Portland-class heavy cruiser lost in deep water near the end of WWII. Located miles down, items like storage crates remain clear and legible due to absent biological decomposition activity.",
+                img: "images/USS Indianapolis.jpg"
+            },
+            "2022": {
+                title: "USS Samuel B. Roberts / Johnston",
+                desc: "Historic deep-sea submersibles surveyed combat ships resting beyond 6,000 meters down in the Philippine Trench. These represent the lowest known structural remains ever documented by oceanographers.",
+                img: "images/USS Samuel B. Roberts shpiwreck.jpg"
+            }
+        };
+
+        const pins = document.querySelectorAll('.map-pin');
+        const tooltip = document.getElementById('map-tooltip');
+        const tTitle = document.getElementById('tooltip-title');
+        const tMeta = document.getElementById('tooltip-meta');
+        const tDesc = document.getElementById('tooltip-desc');
+
+        pins.forEach(pin => {
+            pin.addEventListener('click', function() {
+                pins.forEach(p => p.classList.remove('active-pin'));
+                this.classList.add('active-pin');
+
+                const key = this.getAttribute('data-wreck');
+                const info = wreckData[key];
+                
+                tooltip.classList.remove('hidden');
+                tTitle.textContent = info.title;
+                tMeta.textContent = info.meta;
+                tDesc.textContent = info.desc;
+            });
+        });
+
+        const timeBtns = document.querySelectorAll('.time-btn');
+        const labelYear = document.getElementById('timeline-year-label');
+        const labelTitle = document.getElementById('timeline-title');
+        const labelDesc = document.getElementById('timeline-desc-text');
+        const frameImg = document.getElementById('timeline-img-frame');
+
+        timeBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                timeBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const year = this.getAttribute('data-year');
+                const currentData = timelineData[year];
+
+                labelYear.textContent = year;
+                labelTitle.textContent = currentData.title;
+                labelDesc.textContent = currentData.desc;
+                frameImg.style.backgroundImage = `url('${currentData.img}')`;
+            });
+        });
+    </script>
+<script src="script.js" defer></script>
+</body>
+</html>
